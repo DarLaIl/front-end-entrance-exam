@@ -1,82 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  justify-content: center;
   min-width: 320px;
   min-height: 100vh;
 }
-
 #app {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid black;
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  padding: 20px;
 }
-.profileImg {
+p {
+  margin: 0;
 }
-.name {
+.img {
+  margin: 0 20px 20px 0;
 }
 .box {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  padding: 12px;
+  background-color: #f0f0f0;
+  margin: 0 20px 20px 0;
+  border-radius: 12px;
+}
+.name {
+  width: 124px;
+  height: 124px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .greetingPhrase {
+  color: #000000;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 150%;
 }
-.yourInfo {
+.personName {
+  color: #000000;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 104%;
 }
 .role {
+  margin-top: 6px;
+  color: #5c5c5c;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 150%;
 }
 .lenguages {
+  width: 267px;
+  height: 124px;
+  display: flex;
+  flex-direction: column;
 }
 .title {
+  margin-bottom: 16px;
 }
 .nameTitle {
+  color: #000000;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
 }
 .listLenguages {
+  display: flex;
+  flex-direction: row;
+  column-gap: 17px;
 }
 .nameLenguage {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
 }
-.nameLenguage_one {
-}
-.nameLenguage_two {
-}
-.nameLenguage_three {
+.nameLenguage p {
+  color: #000000;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 104%;
 }
 .levelLenguage {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.levelLenguage_ProgressBar {
+input[type='range'] {
+  width: 168px;
+  margin: 0 0 10px 0;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: ew-resize;
+  outline: none;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+  height: 11px;
+  background: #f0f0f0;
+  border-radius: 3px;
+}
+
+input[type='range']::-moz-range-track {
+  height: 11px;
+  background: #f0f0f0;
+  border-radius: 3px;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 11px;
+  width: 11px;
+  background-color: #28d979;
+  border-radius: 3px;
+  border: 2px solid #28d979;
+  box-shadow: -407px 0 0 400px #28d979;
+}
+
+input[type='range']::-moz-range-thumb {
+  height: 11px;
+  width: 11px;
+  background-color: #28d979;
+  border-radius: 3px;
+  border: 1px solid #28d979;
+  box-shadow: -407px 0 0 400px #28d979;
 }
 .experience {
+  max-width: 411px;
+  display: flex;
+  flex-direction: column;
 }
 .jobList {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
 }
 .lastJob {
+  padding: 8px;
+  background-color: #28d979;
+  color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
 }
 .topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .date {
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 150%;
 }
 .tag {
+  width: 61px;
+  text-align: center;
+  background-color: rgb(126, 115, 18, 0.4);
+  padding: 2px;
+  border-radius: 59px;
+}
+.tag p {
+  opacity: 100%;
+  color: #ddf163;
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 155%;
 }
 .content {
+  display: flex;
+  column-gap: 8px;
 }
 .jobInfo {
+  width: 124px;
+  display: flex;
+  flex-direction: column;
+  row-gap: -2px;
 }
 .roleName {
+  width: 124px;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 150%;
 }
 .aboutJob {
+  display: flex;
+  column-gap: 6px;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 150%;
 }
-.companyName {
-}
-.divider {
-}
-.info {
-}
+
 .featuredPoints {
+  display: flex;
+  flex-direction: column;
+  row-gap: -2px;
 }
 .points {
+  margin-block-start: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 150%;
 }
 .job-2 {
+  background-color: #ffffff;
+  padding: 8px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
 }
+
 .job-3 {
+  background-color: #ffffff;
+  padding: 8px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
 }
 .tools {
 }

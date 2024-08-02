@@ -8,11 +8,19 @@
   </head>
   <body>
     <div id="app">
-      <div class="profileImg"></div>
+      <div class="img">
+        <img
+          class="profileImg"
+          src="img/profileImg.png"
+          alt="photo"
+          width="124px"
+          height="124px"
+        />
+      </div>
       <div class="name box">
         <p class="greetingPhrase">Hello 👋🏻 I’m</p>
         <div class="yourInfo">
-          <p class="name">Karthik SR</p>
+          <p class="personName">Karthik SR</p>
           <p class="role">UX/UI Designer</p>
         </div>
       </div>
@@ -22,29 +30,14 @@
         </div>
         <div class="listLenguages">
           <div class="nameLenguage">
-            <p class="nameLenguage_one">English</p>
-            <p class="nameLenguage_two">Malayalam</p>
-            <p class="nameLenguage_three">Hindi</p>
+            <p>English</p>
+            <p>Malayalam</p>
+            <p>Hindi</p>
           </div>
           <div class="levelLenguage">
-            <input
-              class="levelLenguage_ProgressBar"
-              type="range"
-              min="0"
-              max="5"
-            />
-            <input
-              class="levelLenguage_ProgressBar"
-              type="range"
-              min="0"
-              max="5"
-            />
-            <input
-              class="levelLenguage_ProgressBar"
-              type="range"
-              min="0"
-              max="5"
-            />
+            <input type="range" min="0" max="5" />
+            <input type="range" min="0" max="5" />
+            <input type="range" min="0" max="5" />
           </div>
         </div>
       </div>
@@ -56,7 +49,9 @@
           <div class="lastJob">
             <div class="topBar">
               <p class="date">Jun. 2023 - Present</p>
-              <div class="tag">most recent</div>
+              <div class="tag">
+                <p>most recent</p>
+              </div>
             </div>
             <div class="content">
               <div class="jobInfo">
@@ -86,9 +81,9 @@
               <div class="jobInfo">
                 <p class="roleName">Graphic / Web designer</p>
                 <div class="aboutJob">
-                  <p class="companyName">Freelance</p>
-                  <p class="divider">|</p>
-                  <p class="info"></p>
+                  <p class="companyName" style="color:#3F3D3D">Freelance</p>
+                  <p class="divider" style="color:#3F3D3D">|</p>
+                  <p class="info" style="color:#3F3D3D"></p>
                 </div>
               </div>
               <div class="featuredPoints">
@@ -114,9 +109,9 @@
               <div class="jobInfo">
                 <p class="roleName">Legal Assistant</p>
                 <div class="aboutJob">
-                  <p class="companyName">Law Firm</p>
-                  <p class="divider">|</p>
-                  <p class="info">Intern</p>
+                  <p class="companyName" style="color:#3F3D3D">Law Firm</p>
+                  <p class="divider" style="color:#3F3D3D">|</p>
+                  <p class="info" style="color:#3F3D3D">Intern</p>
                 </div>
               </div>
               <div class="featuredPoints">
@@ -285,7 +280,7 @@
       <div class="extraBox">
         <div class="interests box">
           <div class="title">
-            <p class="nameTitle">Education</p>
+            <p class="nameTitle">Interests</p>
           </div>
           <div class="content">
             <div class="tag">branding</div>
