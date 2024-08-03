@@ -41,8 +41,11 @@ body {
   cursor: pointer;
 }
 .changingPopUp {
-  border: 1px solid #149063;
+  margin-top: 20px;
   width: 320px;
+}
+.capybara {
+  width: 300px;
 }
 #app {
   display: flex;
