@@ -14,27 +14,33 @@
           <h4>Build your own awesome resume with this template!</h4>
         </div>
         <div class="changingButtons">
-          <button class="ripple " id="changeResume">Change resume</button>
-          <button class="ripple " id="saveChenges">Save changes</button>
-          <button class="ripple " id="downloadResume">Download resume</button>
+          <button class="ripple" id="changeResume">Change resume</button>
+          <button class="ripple" id="saveChenges">Save changes</button>
+          <button class="ripple" id="downloadResume">Download resume</button>
         </div>
         <div class="changingPopUp">
-            <img class="capybara" src="img/capybara.png" alt="capybara">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img class="capybara" src="img/capybara.png" alt="capybara" />
+              </div>
+              <div class="flip-card-back">
+                <form id="popUpForm"></form>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div id="app">
         <div class="img">
-          <img
-            class="profileImg"
-            src="img/profileImg.png"
-            alt="photo"
-          />
+          <img class="profileImg" src="img/profileImg.png" alt="photo" />
         </div>
         <div class="name box">
-          <p class="greetingPhrase">Hello 👋🏻 I’m</p>
-
+          <div class="greeting title">
+            <p class="greetingPhrase">Hello 👋🏻 I’m</p>
+            <button class="ripple updateBtn disabled">Update</button>
+          </div>
           <div class="yourInfo">
-            <button class="ripple updateBtn disabled">🖉 Update</button>
             <p class="personName">Karthik SR</p>
             <p class="role">UX/UI Designer</p>
           </div>
@@ -42,7 +48,7 @@
         <div class="lenguages box">
           <div class="title">
             <p class="nameTitle">Lenguages</p>
-            <button class="ripple updateBtn disabled">🖉 Update</button>
+            <button class="ripple updateBtn disabled">Update</button>
           </div>
           <div class="listLenguages">
             <div class="nameLenguage">
@@ -60,7 +66,7 @@
         <div class="experience box">
           <div class="title">
             <p class="nameTitle">Experience</p>
-            <button  class="ripple updateBtn disabled">🖉 Update</button>
+            <button class="ripple updateBtn disabled">Update</button>
           </div>
           <div class="jobList">
             <div class="lastJob">
@@ -154,7 +160,7 @@
         <div class="tools box">
           <div class="title">
             <p class="nameTitle">Tools</p>
-            <button  class="ripple updateBtn disabled">🖉 Update</button>
+            <button class="ripple updateBtn disabled">Update</button>
           </div>
           <div class="content">
             <div class="toolsTag">design</div>
@@ -188,7 +194,7 @@
         <div class="education box">
           <div class="title">
             <p class="nameTitle">Education</p>
-            <button  class="ripple updateBtn disabled">🖉 Update</button>
+            <button class="ripple updateBtn disabled">Update</button>
           </div>
           <div class="educationcontent">
             <div class="column-1">
@@ -251,7 +257,7 @@
           <div class="interests box">
             <div class="title">
               <p class="nameTitle">Interests</p>
-              <button  class="ripple updateBtn disabled">🖉 Update</button>
+              <button class="ripple updateBtn disabled">Update</button>
             </div>
             <div class="interestsContent">
               <div class="interestsTag">branding</div>
@@ -270,7 +276,7 @@
             <div class="contactTitle">
               <p>Let´s chat! I´m ready to work on excinting projects</p>
             </div>
-            <button  class="ripple updateBtn disabled">🖉 Update</button>
+            <button class="ripple updateBtn disabled">Update</button>
             <div class="contactInfo">
               <p>srkarthik.designscape@gmail.com</p>
             </div>

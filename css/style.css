@@ -18,9 +18,10 @@ body {
   align-items: center;
   padding: 20px;
   min-width: 320px;
-  max-width: 555px;
+  width: 50%;
   height: 100vh;
   border: 1px solid #000000;
+  margin-bottom: 20px;
 }
 .changingTitle {
   text-align: center;
@@ -36,7 +37,7 @@ body {
   color: #ffffff;
   border: none;
   border-radius: 12px;
-  margin-right: 15px;
+  margin: 10px;
   padding: 5px;
   cursor: pointer;
 }
@@ -430,6 +431,47 @@ input[type='range']::-moz-range-thumb {
   font-size: 10px;
   line-height: 150%;
   color: #dddddd;
+}
+
+
+/*POPUP*/
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;  
+}
+
+/* Этот контейнер нужен для позиционирования переда и обратной стороны фото */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Поворот горизонтальный */
+.flip-card.activePopUp .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Позиционирования переда и обратной стороны фото на телефоне */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Стиль переда и обратной стороны фото */
+.flip-card-back {
+  background-color: #f0f0f0;
+  color: white;
+  transform: rotateY(180deg);
 }
 
 @media all and (max-width: 567px) {

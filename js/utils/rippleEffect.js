@@ -1,4 +1,5 @@
-import '../css/rippleEffect.css';
+import '../../css/rippleEffect.css';
+
 export function rippleEffect() {
   const elementsWithRipple = document.querySelectorAll('.ripple');
 
