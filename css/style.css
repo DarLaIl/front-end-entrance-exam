@@ -239,7 +239,6 @@ input[type='range']::-moz-range-thumb {
   width: 124px;
   display: flex;
   flex-direction: column;
-  row-gap: -2px;
 }
 .roleName {
   width: 124px;
@@ -258,7 +257,6 @@ input[type='range']::-moz-range-thumb {
 .featuredPoints {
   display: flex;
   flex-direction: column;
-  row-gap: -2px;
 }
 .points {
   margin-block-start: 0;
@@ -361,7 +359,6 @@ input[type='range']::-moz-range-thumb {
 .lastEducationContent {
   display: flex;
   flex-direction: column;
-  row-gap: -2px;
 }
 .nameTitleEducation {
   font-weight: 500;
@@ -431,7 +428,6 @@ input[type='range']::-moz-range-thumb {
   line-height: 150%;
   color: #dddddd;
 }
-
 
 @media all and (max-width: 567px) {
   .wrapper {
