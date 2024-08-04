@@ -1,7 +1,7 @@
 # Вступительный экзамен для Front-end разработчика
 
 ## Веб-страница "Resume builder"
-####[Рабочее демо проекта](https://front-end-entrance-exam.netlify.app)
+#### [Рабочее демо проекта](https://front-end-entrance-exam.netlify.app)
 
 ### Реализованы основные требования:
 
