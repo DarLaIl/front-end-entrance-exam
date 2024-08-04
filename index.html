@@ -15,7 +15,6 @@
         </div>
         <div class="changingButtons">
           <button class="ripple" id="changeResume">Change resume</button>
-          <button class="ripple" id="saveChenges">Save changes</button>
           <button class="ripple" id="downloadResume">Download resume</button>
         </div>
         <div class="changingPopUp">
@@ -25,10 +24,38 @@
                 <img class="capybara" src="img/capybara.png" alt="capybara" />
               </div>
               <div class="flip-card-back">
-                <form id="popUpForm"></form>
+                <form class="custom" id="popUpForm">
+                  <div class="formChangingButtons">
+                    <button type="submit" class="ripple" id="saveChanges">
+                      Save changes
+                    </button>
+                    <button type="reset" class="ripple" id="cancelChanges">
+                      Сancel
+                    </button>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
+        </div>
+        <div class="smallScreen popup__bg">
+          <form class="custom popup">
+            <svg
+              class="close-popup"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#2982ff"
+                d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
+              />
+            </svg>
+            <button type="submit" class="ripple" id="saveChanges">
+              Save changes
+            </button>
+          </form>
         </div>
       </div>
       <div id="app">

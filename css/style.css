@@ -41,11 +41,11 @@ body {
   padding: 5px;
   cursor: pointer;
 }
-
 .changingButtons button:hover {
   border: 1px solid #28d979;
   background-color: #f0f0f0;
   color: #072715;
+    transition: 0.5s all;
 }
 .changingPopUp {
   margin-top: 20px;
@@ -53,6 +53,9 @@ body {
 }
 .capybara {
   width: 300px;
+}
+.smallScreen {
+    display: none;
 }
 #app {
   display: flex;

@@ -1,9 +1,8 @@
 import '../css/style.css';
 import { rippleEffect } from './utils/rippleEffect';
-import { createUserPopUp } from './popups/createUserPopUp';
+import { createUserPopUp } from './popups/userPopUp/createUserPopUp';
 
 const changeResume = document.querySelector('#changeResume');
-const saveChenges = document.querySelector('#saveChenges');
 const downloadResume = document.querySelector('#downloadResume');
 const updateBtn = document.querySelectorAll('.updateBtn');
 

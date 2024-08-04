@@ -1,0 +1,75 @@
+/*код для стилизации формы */
+.close-popup {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.custom.label {
+  width: 100%;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.custom label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #28d979;
+  margin-bottom: 5px;
+}
+
+.custom input {
+  height: 25px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #cfd0d3;
+}
+
+.custom input:focus {
+  border-bottom: 1px solid #28d979;
+}
+.formChangingButtons {
+  display: flex;
+}
+
+#saveChanges {
+  width: 50%;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
+  border: 2px solid #28d979;
+  background: #28d979;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+#cancelChanges {
+  width: 50%;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
+  border: 2px solid #d92828;
+  background: #d92828;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+#saveChanges:hover {
+  border: 1px solid #28d979;
+  background-color: #f0f0f0;
+  color: #072715;
+  transition: 0.5s all;
+}
+#cancelChanges:hover {
+  border: 1px solid #d92828;
+  background-color: #f0f0f0;
+  color: #072715;
+  transition: 0.5s all;
+}
