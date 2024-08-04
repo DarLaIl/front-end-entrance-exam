@@ -5,14 +5,21 @@
   right: 10px;
   cursor: pointer;
 }
-
-.custom.label {
+.label {
+  font-size: 15px;
   width: 100%;
   margin-bottom: 25px;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
+.infoLabel {
+  color: #28d979;
+  font-size: 14px;
+  width: 100%;
+  margin-bottom: 25px;
+}
 .custom label {
   font-size: 14px;
   font-weight: 500;
@@ -21,11 +28,18 @@
 }
 
 .custom input {
-  height: 25px;
+    width: 70%;
+  height: 15px;
   font-size: 18px;
   border: none;
   outline: none;
   border-bottom: 1px solid #cfd0d3;
+}
+::placeholder {
+    text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: #15714084;
 }
 
 .custom input:focus {

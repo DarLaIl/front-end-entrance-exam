@@ -1,4 +1,5 @@
-export function submitHandler() {
+export function submitHandler(e) {
+    e.preventDefault();
   const greetingPhrase = document.querySelector('.greetingPhraseInput').value;
   const userName = document.querySelector('.userName').value;
   const userRole = document.querySelector('.userRole').value;
@@ -14,4 +15,9 @@ export function submitHandler() {
   } else {
     alert('Please, enter your information to all fields..');
   }
+  document.querySelector('.container').innerHTML = '';
+  const flipCard = document.querySelector('.flip-card');
+  flipCard.classList.remove('activePopUp');
 }
+
+

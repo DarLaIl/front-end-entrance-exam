@@ -1,64 +1,19 @@
 import '../../../css/popUps/popUp.css';
 import { submitHandler } from './submitHandler';
-import { resetHandler } from './resetHandler';
+import { resetHandler } from '../../utils/resetHandler';
 
 export function createUserPopUp() {
-  const greetingPhraseContainer = document.createElement('div');
-  greetingPhraseContainer.classList.add('label');
-
-  const greetingPhraseLabel = document.createElement('label');
-  greetingPhraseLabel.textContent = 'Enter your greeting..';
-  greetingPhraseLabel.classList.add('label_text');
-  greetingPhraseContainer.appendChild(greetingPhraseLabel);
-
-  const greetingPhraseInput = document.createElement('input');
-  greetingPhraseInput.type = 'text';
-  greetingPhraseInput.setAttribute('maxlength', 20);
-  greetingPhraseInput.classList.add('greetingPhraseInput');
-  greetingPhraseContainer.appendChild(greetingPhraseInput);
-
-  const userNameContainer = document.createElement('div');
-  userNameContainer.classList.add('label');
-
-  const userNameLabel = document.createElement('label');
-  userNameLabel.textContent = 'Enter your name..';
-  userNameLabel.classList.add('label_text');
-  userNameContainer.appendChild(userNameLabel);
-
-  const userNameInput = document.createElement('input');
-  userNameInput.type = 'text';
-  userNameInput.classList.add('userName');
-  userNameContainer.appendChild(userNameInput);
-
-  const userRoleContainer = document.createElement('div');
-  userNameContainer.classList.add('label');
-
-  const userRoleLabel = document.createElement('label');
-  userRoleLabel.textContent = 'Enter your job title..';
-  userRoleLabel.classList.add('label_text');
-  userRoleContainer.appendChild(userRoleLabel);
-
-  const userRoleInput = document.createElement('input');
-  userRoleInput.type = 'text';
-  userRoleInput.classList.add('userRole');
-  userRoleContainer.appendChild(userRoleInput);
-
   const popUpForm = document.querySelector('#popUpForm');
-  const popUpConteiner = document.querySelector('.container');
 
-  popUpConteiner.appendChild(greetingPhraseContainer);
-  popUpConteiner.appendChild(userNameContainer);
-  popUpConteiner.appendChild(userRoleContainer);
-
-  popUpForm.appendChild(popUpConteiner);
+  if (!popUpForm.innerHTML) {
+    popUpForm.innerHTML = `<div class="formChangingButtons"><button class="ripple" id="saveChanges">Save changes</button><button type="reset" class="ripple" id="cancelChanges">Сancel</button></div><div class="container"><div class="container"><div class="label"><label class="label_text">Enter your greeting..</label><input type="text" maxlength="20" class="greetingPhraseInput"></div><div class="label"><label class="label_text">Enter your name..</label><input type="text" class="userName"></div><div><label class="label_text">Enter your job title..</label><input type="text" class="userRole"></div></div></div>`;
+  } else {
+    popUpForm.innerHTML = '';
+    createUserPopUp();
+    }
+    
+    const submitButton = document.querySelector('#saveChanges');
+    submitButton.addEventListener('click', submitHandler);
+    const cancelChanges = document.querySelector('#cancelChanges');
+    cancelChanges.addEventListener('click', resetHandler);
 }
-
-const submitButton = document.querySelector('#saveChanges');
-  submitButton.addEventListener('click', (e) => {
-    e.preventDefault();
-    submitHandler();
-    const flipCard = document.querySelector('.flip-card');
-    flipCard.classList.remove('activePopUp');
-  });
-  const cancelChanges = document.querySelector('#cancelChanges');
-  cancelChanges.addEventListener('click', resetHandler);
