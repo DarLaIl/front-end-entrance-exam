@@ -10,4 +10,7 @@ export function experienceSubmitHandler(e) {
     element.classList.remove('editableActive');
     element.setAttribute('contenteditable', 'false');
   });
+      document.querySelector('.container').innerHTML = '';
+      const flipCard = document.querySelector('.flip-card');
+      flipCard.classList.remove('activePopUp');
 }

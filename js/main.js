@@ -4,6 +4,7 @@ import { createUserPopUp } from './popups/userPopUp/createUserPopUp';
 import { languagesPopUp } from './popups/languagesPopUp/languagesPopUp';
 import { experiencePopUp } from './popups/experiencePopUp/experiencePopUp';
 import { toolsPopUp } from './popups/toolsPopUp/toolsPopUp';
+import { educationPopUp } from './popups/educationPopUp/educationPopUp';
 
 const changeResume = document.querySelector('#changeResume');
 const downloadResume = document.querySelector('#downloadResume');
@@ -16,6 +17,7 @@ const popUpsOpeners = [
   languagesPopUp,
   experiencePopUp,
   toolsPopUp,
+  educationPopUp,
 ];
 changeResume.addEventListener('click', () => {
   updateBtn.forEach((btn) => {

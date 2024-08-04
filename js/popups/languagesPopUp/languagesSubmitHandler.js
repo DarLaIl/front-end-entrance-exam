@@ -26,6 +26,9 @@ export function languagesSubmitHandler(e) {
     } else {
       alert('Please, enter your information to all fields..');
     }
+      document.querySelector('.container').innerHTML = '';
+      const flipCard = document.querySelector('.flip-card');
+      flipCard.classList.remove('activePopUp');
 }
 
 

@@ -8,4 +8,10 @@ export function resetHandler() {
     element.classList.remove('editableActive');
     element.setAttribute('contenteditable', 'false');
   });
+  const educationEditableElements =
+    document.querySelectorAll('.educationEditable');
+  educationEditableElements.forEach((element) => {
+    element.classList.remove('educationEditableActive');
+    element.setAttribute('contenteditable', 'false');
+  });
 }
