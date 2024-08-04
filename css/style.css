@@ -429,9 +429,10 @@ input[type='range']::-moz-range-thumb {
   line-height: 150%;
 }
 .contactBox {
+  position: relative;
   display: flex;
   flex-direction: column;
-  row-gap: 5px;
+  row-gap: 15px;
   padding: 12px;
   background-color: #000000;
   color: #ffffff;

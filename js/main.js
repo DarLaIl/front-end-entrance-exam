@@ -5,7 +5,9 @@ import { languagesPopUp } from './popups/languagesPopUp/languagesPopUp';
 import { experiencePopUp } from './popups/experiencePopUp/experiencePopUp';
 import { toolsPopUp } from './popups/toolsPopUp/toolsPopUp';
 import { educationPopUp } from './popups/educationPopUp/educationPopUp';
-import { interestsPopUp } from './popups/interestsPopUp/interestsPopUp'
+import { interestsPopUp } from './popups/interestsPopUp/interestsPopUp';
+import { contactPopUp } from './popups/contactPopUp/contactPopUp';
+
 const changeResume = document.querySelector('#changeResume');
 const downloadResume = document.querySelector('#downloadResume');
 const updateBtn = document.querySelectorAll('.updateBtn');
@@ -19,16 +21,17 @@ const popUpsOpeners = [
   toolsPopUp,
   educationPopUp,
   interestsPopUp,
+  contactPopUp,
 ];
 changeResume.addEventListener('click', () => {
   updateBtn.forEach((btn) => {
-      btn.classList.replace('disabled', 'activeBtn');
+    btn.classList.replace('disabled', 'activeBtn');
   });
 });
 updateBtn.forEach((btn, index) => {
-    btn.addEventListener('click', () => {
-        const flipCard = document.querySelector('.flip-card');
-        flipCard.classList.add('activePopUp');
-        popUpsOpeners[index]();
-    })
-})
+  btn.addEventListener('click', () => {
+    const flipCard = document.querySelector('.flip-card');
+    flipCard.classList.add('activePopUp');
+    popUpsOpeners[index]();
+  });
+});
