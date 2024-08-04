@@ -36,6 +36,9 @@ updateBtn.forEach((btn, index) => {
 });
 
 document.querySelector('#download').addEventListener('click', () => {
+  updateBtn.forEach((btn) => {
+    btn.classList.replace('activeBtn', 'disabled');
+  });
   const element = document.querySelector('#app');
   html2pdf().from(element).save('file.pdf');
 });
