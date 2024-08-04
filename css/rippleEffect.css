@@ -1,11 +1,11 @@
 /* Ripple effect styles */
 
 .rippleActive {
-  background: white;
-  width: 1px;
-  height: 1px;
+  background: #28d979;
+  width: 0.5px;
+  height: 0.5px;
   border-radius: 100%;
-  opacity: 0.4;
+  opacity: 0.5;
   position: absolute;
   transition: all 1s ease-out;
   pointer-events: none;
