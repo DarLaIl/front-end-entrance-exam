@@ -1,14 +1,15 @@
-export function educationSubmitHandler(e) {
+export function interestsSubmitHandler(e) {
   e.preventDefault();
 
-  const sectionName = document.querySelector('.educationTitle');
+  const sectionName = document.querySelector('.interestsTitle');
   const sectionNameValue = document.querySelector('.section_text');
   sectionName.textContent = sectionNameValue.value;
+
   if (sectionNameValue.value.length > 0) {
     const educationEditableElements =
-      document.querySelectorAll('.educationEditable');
+      document.querySelectorAll('.interestsEditable');
     educationEditableElements.forEach((element) => {
-      element.classList.remove('educationEditableActive');
+      element.classList.remove('interestsEditableActive');
       element.setAttribute('contenteditable', 'false');
     });
     document.querySelector('.container').innerHTML = '';

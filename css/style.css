@@ -499,6 +499,11 @@ input[type='range']::-moz-range-thumb {
   cursor: text;
   color: #b63e0f;
 }
+.interestsEditableActive {
+  border: 1px dashed #ccc;
+  cursor: text;
+  color: #b63e0f;
+}
 @media all and (max-width: 567px) {
   .wrapper {
     flex-wrap: wrap;

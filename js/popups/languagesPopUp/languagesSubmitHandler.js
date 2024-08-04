@@ -11,24 +11,26 @@ export function languagesSubmitHandler(e) {
   const fieldNamesValues = Array.from(fieldNames).map((input) => input.value);
   const fieldLevelsValues = Array.from(fieldLevels).map((input) => input.value);
 
-    if (
-      sectionNameValue.value.length > 0 &&
-      nameFields.length > 0 &&
-      levelFields.length > 0
-    ) {
-      sectionName.textContent = sectionNameValue.value;
-      nameFields.forEach((field, index) => {
-        field.textContent = fieldNamesValues[index];
-      });
-      levelFields.forEach((field, index) => {
-        field.value = fieldLevelsValues[index];
-      });
-    } else {
-      alert('Please, enter your information to all fields..');
-    }
-      document.querySelector('.container').innerHTML = '';
-      const flipCard = document.querySelector('.flip-card');
-      flipCard.classList.remove('activePopUp');
+  if (
+    sectionNameValue.value.length > 0 &&
+    fieldNamesValues.some(
+      (value) => value !== null && value !== '' && value !== undefined
+    ) > 0 &&
+    fieldLevelsValues.some(
+      (value) => value !== null && value !== '' && value !== undefined
+    ) > 0
+  ) {
+    sectionName.textContent = sectionNameValue.value;
+    nameFields.forEach((field, index) => {
+      field.textContent = fieldNamesValues[index];
+    });
+    levelFields.forEach((field, index) => {
+      field.value = fieldLevelsValues[index];
+    });
+  } else {
+    alert('Please, enter your information to all fields..');
+  }
+  document.querySelector('.container').innerHTML = '';
+  const flipCard = document.querySelector('.flip-card');
+  flipCard.classList.remove('activePopUp');
 }
-
-
