@@ -9,7 +9,6 @@ import { interestsPopUp } from './popups/interestsPopUp/interestsPopUp';
 import { contactPopUp } from './popups/contactPopUp/contactPopUp';
 
 const changeResume = document.querySelector('#changeResume');
-const downloadResume = document.querySelector('#downloadResume');
 const updateBtn = document.querySelectorAll('.updateBtn');
 
 rippleEffect();
