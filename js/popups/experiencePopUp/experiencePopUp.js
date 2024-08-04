@@ -1,20 +1,25 @@
 import '../../../css/popUps/popUp.css';
-//import { experienceSubmitHandler } from './experienceSubmitHandler';
-//import { resetHandler } from '../../utils/resetHandler';
+import { experienceSubmitHandler } from './experienceSubmitHandler';
+import { resetHandler } from '../../utils/resetHandler';
 
 export function experiencePopUp() {
-    const popUpConteiner = document.querySelector('.container');
-    popUpConteiner.innerHTML = `<div class="container"><div class="infoLabel">Please indicate which languages you speak and their level (maximum three languages) </div><div class="label"><label class="label_text">Enter your language..</label><input type="text"><label class="label_text">Enter your language level..</label><input type="text" placeholder="Enter digit from 1 to 5"></div><div class="label"><label class="label_text">Enter your language..</label><input type="text"><label class="label_text">Enter your language level..</label><input type="text" placeholder="Enter digit from 1 to 5"></div><div class="label"><label class="label_text">Enter your language..</label><input type="text"><label class="label_text">Enter your language level..</label><input type="text" placeholder="Enter digit from 1 to 5"></div></div>
-`;
-  
-}
+  const popUpForm = document.querySelector('#popUpForm');
 
-//const submitButton = document.querySelector('#saveChanges');
-//submitButton.addEventListener('click', (e) => {
-//  e.preventDefault();
-//  experienceSubmitHandler();
-//  const flipCard = document.querySelector('.flip-card');
-//  flipCard.classList.remove('activePopUp');
-//});
-//const cancelChanges = document.querySelector('#cancelChanges');
-//cancelChanges.addEventListener('click', resetHandler);
+  if (!popUpForm.innerHTML) {
+      popUpForm.innerHTML = `<div class="formChangingButtons"><button type="submit" class="ripple" id="saveChanges">Save changes</button><button type="reset" class="ripple" id="cancelChanges">Сancel</button></div><div class="container"><div class="container"><div class="label"><label class="label_text">Enter your section name…</label><input class="section_text" type="text"></div><div class="infoLabel">Please enter your job experience (last three). You can change text inside the resume fields</div>`
+      
+      const editableElements = document.querySelectorAll('.editable');
+      editableElements.forEach((element) => {
+          element.classList.add('editableActive');
+          element.setAttribute('contenteditable', "true");
+      })
+  } else {
+    popUpForm.innerHTML = '';
+    experiencePopUp();
+  }
+
+  const submitButton = document.querySelector('#saveChanges');
+  submitButton.addEventListener('click', experienceSubmitHandler);
+  const cancelChanges = document.querySelector('#cancelChanges');
+  cancelChanges.addEventListener('click', resetHandler);
+}

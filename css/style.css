@@ -489,6 +489,11 @@ input[type='range']::-moz-range-thumb {
   transform: rotateY(180deg);
 }
 
+.editableActive {
+  border: 1px dashed #ccc;
+  cursor: text;
+  color: #b63e0f;
+}
 @media all and (max-width: 567px) {
   .wrapper {
     flex-wrap: wrap;
