@@ -1,10 +1,8 @@
 import '../../../css/popUps/popUp.css';
 import { submitHandler } from './submitHandler';
-//import { resetHandler } from './resetHandler';
+import { resetHandler } from './resetHandler';
 
 export function createUserPopUp() {
-  const popUpForm = document.querySelector('#popUpForm');
-
   const greetingPhraseContainer = document.createElement('div');
   greetingPhraseContainer.classList.add('label');
 
@@ -45,15 +43,22 @@ export function createUserPopUp() {
   userRoleInput.classList.add('userRole');
   userRoleContainer.appendChild(userRoleInput);
 
-  popUpForm.appendChild(greetingPhraseContainer);
-  popUpForm.appendChild(userNameContainer);
-  popUpForm.appendChild(userRoleContainer);
+  const popUpForm = document.querySelector('#popUpForm');
+  const popUpConteiner = document.querySelector('.container');
 
-  const submitButton = document.querySelector('#saveChanges');
-    submitButton.addEventListener('click', (e) => {
-        e.preventDefault();
-        submitHandler()
-  });
-//  const cancelChanges = document.querySelector('#cancelChanges');
-//  cancelChanges.addEventListener('click', resetHandler);
+  popUpConteiner.appendChild(greetingPhraseContainer);
+  popUpConteiner.appendChild(userNameContainer);
+  popUpConteiner.appendChild(userRoleContainer);
+
+  popUpForm.appendChild(popUpConteiner);
 }
+
+const submitButton = document.querySelector('#saveChanges');
+  submitButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    submitHandler();
+    const flipCard = document.querySelector('.flip-card');
+    flipCard.classList.remove('activePopUp');
+  });
+  const cancelChanges = document.querySelector('#cancelChanges');
+  cancelChanges.addEventListener('click', resetHandler);
