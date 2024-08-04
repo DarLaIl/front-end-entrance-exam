@@ -3,6 +3,7 @@ import { contactSubmitHandler } from './contactSubmitHandler';
 import { resetHandler } from '../../utils/resetHandler';
 
 export function contactPopUp() {
+  document.querySelector('.animation').classList.remove('animationActive');
   const popUpForm = document.querySelector('#popUpForm');
 
   if (!popUpForm.innerHTML) {

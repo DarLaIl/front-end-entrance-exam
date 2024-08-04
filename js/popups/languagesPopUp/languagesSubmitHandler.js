@@ -1,5 +1,7 @@
 export function languagesSubmitHandler(e) {
   e.preventDefault();
+
+  document.querySelector('.animation').classList.add('animationActive');
   const sectionName = document.querySelector('.language');
 
   const fieldNames = document.querySelectorAll('.input_text');

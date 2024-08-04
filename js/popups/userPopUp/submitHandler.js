@@ -1,5 +1,7 @@
 export function submitHandler(e) {
-    e.preventDefault();
+  e.preventDefault();
+
+  document.querySelector('.animation').classList.add('animationActive');
   const greetingPhrase = document.querySelector('.greetingPhraseInput').value;
   const userName = document.querySelector('.userName').value;
   const userRole = document.querySelector('.userRole').value;
@@ -19,5 +21,3 @@ export function submitHandler(e) {
   const flipCard = document.querySelector('.flip-card');
   flipCard.classList.remove('activePopUp');
 }
-
-

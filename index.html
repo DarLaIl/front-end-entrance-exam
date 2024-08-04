@@ -15,7 +15,7 @@
         </div>
         <div class="changingButtons">
           <button class="ripple" id="changeResume">Change resume</button>
-          <button class="ripple" id="downloadResume">Download resume</button>
+          <button class="ripple" id="download">Download resume</button>
         </div>
         <div class="changingPopUp">
           <div class="flip-card">
@@ -24,33 +24,16 @@
                 <img class="capybara" src="img/capybara.png" alt="capybara" />
               </div>
               <div class="flip-card-back">
-                <form class="custom" id="popUpForm">
-                </form>
+                <form class="custom" id="popUpForm"></form>
               </div>
             </div>
           </div>
         </div>
-        <div class="smallScreen popup__bg">
-          <form class="custom popup">
-            <svg
-              class="close-popup"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-            >
-              <path
-                fill="#2982ff"
-                d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
-              />
-            </svg>
-            <button type="submit" class="ripple" id="saveChanges">
-              Save changes
-            </button>
-          </form>
-        </div>
       </div>
       <div id="app">
+        <div class="animation">
+          <img src="img/capybaraOk.png" alt="capybaraOk" width="200" />
+        </div>
         <div class="img">
           <img class="profileImg" src="img/profileImg.png" alt="photo" />
         </div>
@@ -76,9 +59,27 @@
               <p class="languageName">Hindi</p>
             </div>
             <div class="levelLanguage">
-              <input class="languageLevel" value="" type="range" min="1" max="5" />
-              <input class="languageLevel" value="" type="range" min="1" max="5" />
-              <input class="languageLevel" value="" type="range" min="1" max="5" />
+              <input
+                class="languageLevel"
+                value="4"
+                type="range"
+                min="1"
+                max="5"
+              />
+              <input
+                class="languageLevel"
+                value="3"
+                type="range"
+                min="1"
+                max="5"
+              />
+              <input
+                class="languageLevel"
+                value="2"
+                type="range"
+                min="1"
+                max="5"
+              />
             </div>
           </div>
         </div>
@@ -109,8 +110,10 @@
                     <li class="pointsLi editable">
                       Strategy development and planning of campaigns that
                       promote the business and generate genuine traffic
-                    </li >
-                    <li class="pointsLi editable"> SEO Content Creation for Blogs, Website, Social media</li>
+                    </li>
+                    <li class="pointsLi editable">
+                      SEO Content Creation for Blogs, Website, Social media
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -123,7 +126,9 @@
                 <div class="jobInfo">
                   <p class="roleName editable">Graphic / Web designer</p>
                   <div class="aboutJob">
-                    <p class="companyName editable" style="color: #3f3d3d">Freelance</p>
+                    <p class="companyName editable" style="color: #3f3d3d">
+                      Freelance
+                    </p>
                     <p class="divider editable" style="color: #3f3d3d">|</p>
                     <p class="info editable" style="color: #3f3d3d"></p>
                   </div>
@@ -134,7 +139,9 @@
                       Development of internal projects from scratch, product
                       design of brands
                     </li>
-                    <li class="pointsLi editable">Landing page, webapps and hybrid apps</li>
+                    <li class="pointsLi editable">
+                      Landing page, webapps and hybrid apps
+                    </li>
                     <li class="pointsLi editable">
                       Coordinating with outside agencies, art services, web
                       designer, marketing, printers, and colleagues as
@@ -152,7 +159,9 @@
                 <div class="jobInfo">
                   <p class="roleName editable">Legal Assistant</p>
                   <div class="aboutJob">
-                    <p class="companyName editable" style="color: #3f3d3d">Law Firm</p>
+                    <p class="companyName editable" style="color: #3f3d3d">
+                      Law Firm
+                    </p>
                     <p class="divider editable" style="color: #3f3d3d">|</p>
                     <p class="info editable" style="color: #3f3d3d">Intern</p>
                   </div>
@@ -163,7 +172,9 @@
                       Provide administrative support to lawyer and enhance
                       office effectiveness
                     </li>
-                    <li class="pointsLi editable">Handle communication with clients, witnesses etc.</li>
+                    <li class="pointsLi editable">
+                      Handle communication with clients, witnesses etc.
+                    </li>
                     <li class="pointsLi editable">
                       Repare case briefs and summarize depositions,
                       interrogatories and testimony
@@ -240,7 +251,9 @@
                   <p class="educationEditable">2017</p>
                 </div>
                 <div class="lastEducationContent">
-                  <div class="educationEditable nameTitleEducation">Graphic design</div>
+                  <div class="educationEditable nameTitleEducation">
+                    Graphic design
+                  </div>
                   <div class="tags">
                     <p class="educationEditable">#branding</p>
                     <p class="educationEditable">#web</p>
@@ -265,7 +278,9 @@
                     <p class="educationEditable">#internationalLaws</p>
                   </div>
                 </div>
-                <div class="educationEditable schoolName">University of Kerala</div>
+                <div class="educationEditable schoolName">
+                  University of Kerala
+                </div>
               </div>
             </div>
           </div>
@@ -280,7 +295,9 @@
               <div class="interestsEditable interestsTag">branding</div>
               <div class="interestsEditable interestsTag">design</div>
               <div class="interestsEditable interestsTag">photography</div>
-              <div class="interestsEditable interestsTag">artoficial intelligence</div>
+              <div class="interestsEditable interestsTag">
+                artoficial intelligence
+              </div>
               <div class="interestsEditable interestsTag">illustration</div>
               <div class="interestsEditable interestsTag">typography</div>
               <div class="interestsEditable interestsTag">social networks</div>
@@ -290,9 +307,16 @@
             </div>
           </div>
           <div class="contactBox">
-            <button style="position: absolute; top: px; right: 12px;" class="ripple updateBtn disabled">Update</button>
+            <button
+              style="position: absolute; right: 12px"
+              class="ripple updateBtn disabled"
+            >
+              Update
+            </button>
             <div class="contactTitle">
-              <p class="contactText">Let´s chat! I´m ready to work on excinting projects</p>
+              <p class="contactText">
+                Let´s chat! I´m ready to work on excinting projects
+              </p>
             </div>
             <div class="contactInfo">
               <p>srkarthik.designscape@gmail.com</p>
@@ -301,6 +325,7 @@
         </div>
       </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     <script type="module" src="./js/main.js"></script>
   </body>
 </html>

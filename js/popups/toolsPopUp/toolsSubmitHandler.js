@@ -1,6 +1,7 @@
 export function toolsSubmitHandler(e) {
   e.preventDefault();
 
+  document.querySelector('.animation').classList.add('animationActive');
   const sectionName = document.querySelector('.tool');
   const sectionNameValue = document.querySelector('.section_text');
 

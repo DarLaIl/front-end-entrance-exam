@@ -1,6 +1,7 @@
 export function contactSubmitHandler(e) {
   e.preventDefault();
 
+  document.querySelector('.animation').classList.add('animationActive');
   const sectionName = document.querySelector('.contactText');
   const sectionNameValue = document.querySelector('input[type="text"]');
   const contactInfo = document.querySelector('.contactInfo');

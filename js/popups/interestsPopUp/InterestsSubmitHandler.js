@@ -1,6 +1,7 @@
 export function interestsSubmitHandler(e) {
   e.preventDefault();
 
+  document.querySelector('.animation').classList.add('animationActive');
   const sectionName = document.querySelector('.interestsTitle');
   const sectionNameValue = document.querySelector('.section_text');
   sectionName.textContent = sectionNameValue.value;

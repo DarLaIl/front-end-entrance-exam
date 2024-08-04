@@ -3,6 +3,7 @@ import { interestsSubmitHandler } from './InterestsSubmitHandler';
 import { resetHandler } from '../../utils/resetHandler';
 
 export function interestsPopUp() {
+  document.querySelector('.animation').classList.remove('animationActive');
   const popUpForm = document.querySelector('#popUpForm');
 
   if (!popUpForm.innerHTML) {

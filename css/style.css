@@ -8,8 +8,8 @@ body {
   display: flex;
   column-gap: 20px;
   min-width: 320px;
-  min-height: 100vh;
   padding: 20px;
+  min-height: 100vh;
   font-family: 'Poppins', sans-serif;
 }
 #changingBox {
@@ -19,8 +19,7 @@ body {
   padding: 20px;
   min-width: 320px;
   width: 50%;
-  min-height: 100vh;
-  border: 1px solid #000000;
+  height: 700px;
   margin-bottom: 20px;
 }
 .changingTitle {
@@ -48,21 +47,45 @@ body {
   transition: 0.5s all;
 }
 .changingPopUp {
+  height: 100%;
   margin-top: 20px;
   width: 320px;
 }
 .capybara {
   width: 300px;
 }
-.smallScreen {
-  display: none;
-}
+
 #app {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   max-width: 555px;
   font-family: 'Poppins', sans-serif;
+}
+.animation {
+  display: none;
+}
+.animationActive {
+  display: block;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  animation: myAnim 2s ease 0s 1 normal forwards;
+}
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+    transform: rotate(-540deg) scale(0);
+  }
+  50% {
+    opacity: 1; /* Полностью видим в середине анимации */
+    transform: rotate(0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(-540deg) scale(0);
+  }
 }
 p {
   margin: 0;
@@ -508,5 +531,12 @@ input[type='range']::-moz-range-thumb {
 @media all and (max-width: 567px) {
   .wrapper {
     flex-wrap: wrap;
+  }
+  .animationActive {
+    display: block;
+    position: absolute;
+    top: -15%;
+    left: 30%;
+    animation: myAnim 2s ease 0s 1 normal forwards;
   }
 }

@@ -35,3 +35,8 @@ updateBtn.forEach((btn, index) => {
     popUpsOpeners[index]();
   });
 });
+
+document.querySelector('#download').addEventListener('click', () => {
+  const element = document.querySelector('#app');
+  html2pdf().from(element).save('file.pdf');
+});
