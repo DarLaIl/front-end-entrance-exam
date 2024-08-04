@@ -1,10 +1,4 @@
 /*код для стилизации формы */
-.close-popup {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
-}
 .label {
   font-size: 15px;
   width: 100%;
